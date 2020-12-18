@@ -1,7 +1,7 @@
 #1.cmake verson
 cmake_minimum_required(VERSION 3.1.0)
 
-set (DIR your_mnn_path)
+set (DIR /usr/local)
 
 #2.project name
 project(demo C CXX)
@@ -18,7 +18,7 @@ include_directories(${DIR}/include
 
 # mnn lib
 set (LIBS
-    ${DIR}/build/libMNN.so
+    ${DIR}/lib/libMNN.so
     ${OpenCV_LIBS}
 )
 
